@@ -1,0 +1,143 @@
+/* --------------------
+	LightZAP Theme (2.53)
+-----------------------
+	Name: Default
+	Date: 2012.12.08
+	By: Szalai Mihaly*/
+
+/* Transparent backgrounds */
+#lightzap, .lz-container, .lz-float
+{
+	background:url(icons/bg.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='icons/bg.png',sizingMethod='scale');
+	background:rgba(0,0,0,.8);
+}
+#lightzap.full-screen .lz-buttonContainer, .lz-float, .lz-desc
+{
+	background:url(icons/bg.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='icons/bg.png',sizingMethod='scale');
+	background:rgba(0,0,0,.5);
+}
+/* Overlay */
+#lightzap { font:normal 18px "Arial",sans-serif;color:#fff; }
+/* Fullscreen background */
+#lightzap.full-screen
+{
+	background:#222;
+	box-shadow:inset 0 0 128px #111;
+	font-size:22px;
+}
+/* Fullscreen image effect */
+#lightzap.full-screen .lz-image { box-shadow:0 0 32px #000; }
+/* Image box */
+.lz-container {	box-shadow:0 0 64px #000;margin:16px; }
+.lz-container,.lz-image
+{
+	-webkit-border-radius:.25em;
+	-moz-border-radius:.25em;
+	-ms-border-radius:.25em;
+	-o-border-radius:.25em;
+	border-radius:.25em;
+}
+#lightzap.full-screen .lz-container,#lightzap.full-screen .lz-image
+{
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-ms-border-radius:0;
+	-o-border-radius:0;
+	border-radius:0;
+}
+#lightzap.full-screen .lz-container { margin:0;background:transparent; }
+/* Elements opacity */
+.lz-buttonContainer
+{
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	opacity:.5;
+}
+#lightzap.full-screen .lz-container .lz-float, .lz-caption
+{
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	opacity:.8;
+}
+.lz-container .lz-float:hover, .lz-by, .lz-buttonContainer:hover
+{
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity:1;
+}
+/* Float elements */
+.lz-float
+{
+	color:#fff;
+	position:absolute;
+	font-weight:normal;
+	text-transform:none;
+	padding:.25em .5em;
+}
+#lightzap.full-screen .lz-float
+{
+	padding:.35em .5em;
+	-webkit-border-radius:.3em;
+	-moz-border-radius:.3em;
+	-ms-border-radius:.3em;
+	-o-border-radius:.3em;
+	border-radius:.3em;
+}
+/* Buttons */
+.lz-buttonContainer { top:2px;right:2px;padding:0;background:transparent;height:32px; }
+#lightzap.full-screen .lz-buttonContainer { margin:8px;padding:.35em; }
+.lz-button { margin:4px; }
+/* Caption */
+.lz-caption
+{
+	top:0;
+	left:0;
+	margin:8px;
+	font-weight:bold;
+}
+/* Description */
+.lz-desc
+{
+	width:60%;
+	position:absolute;
+	top:0;
+	margin:10% 20%;
+	padding:1.5em;
+	font-size:80%;
+	font-weight:normal;
+	-webkit-border-radius:.25em;
+	-moz-border-radius:.25em;
+	-ms-border-radius:.25em;
+	-o-border-radius:.25em;
+	border-radius:.25em;
+}
+/* Number */
+.lz-number,.lz-resolution
+{
+	right:0px;
+	bottom:0px;
+	font-size:75%;
+	background:transparent;
+}
+/* Author and link */
+.lz-by
+{
+	left:0px;
+	bottom:0px;
+	font-size:75%;
+	margin:0;
+}
+.lz-by, .lz-by:hover { color:#fff; }
+.lz-by span,.lz-float a { color:#2e3; }
+.lz-by:hover span,.lz-float a:hover{ color:#3f5; }
+/* Resolution */
+.lz-resolution { display:none!important; }
+/* Disabled default
+#lightzap.full-screen .lz-resolution
+{
+	right:0px;
+	bottom:0px;
+	font-size:75%;
+	background:transparent;
+	display:table!important;
+}
+#lightzap.full-screen .lz-number { bottom:1.25em; }*/
