@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo $_SERVER['SERVER_ADDR'].' ['.SCRIPT_NAME.']';?></title>
+	<title><?php echo $_SERVER['SERVER_NAME'].' ['.SCRIPT_NAME.']';?></title>
 	<meta charset="utf-8" />
 <!--
 	<link rel="icon" type="image/svg" href="style/favicon.svg" />
@@ -14,5 +14,5 @@
 </head>
 <body>
 <header>
-	<h1><a href="<?php echo HOME_URL; ?>"><?php	echo $_SERVER['SERVER_ADDR'].' ['.SCRIPT_NAME.']'; 	?></a></h1>
+	<h1><a href="<?php echo HOME_URL; ?>"><?php	echo $_SERVER['SERVER_NAME'].' ['.SCRIPT_NAME.']'; 	?></a></h1>
 </header>
