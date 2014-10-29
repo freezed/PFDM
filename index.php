@@ -36,9 +36,9 @@ $debutScript	= microtime(TRUE);
 
 
 /******************************************************************************
- *																										*
- * 										CONFIG DU SCRIPT										*
- *																										*
+ *																				*
+ * 										CONFIG DU SCRIPT						*
+ *																				*
  *****************************************************************************/
 
 // inclure la config locale
@@ -78,9 +78,9 @@ $corpsHtml		=	'<section>'.PHP_EOL;
 $content			=	scandir(CONTENT_DIR);
 
 /******************************************************************************
- *																										*
- * 											FONCTIONS											*
- *																										*
+ *																				*
+ * 											FONCTIONS							*
+ *																				*
  *****************************************************************************/
 
 /*
@@ -182,7 +182,8 @@ function getMimeType($filename, $part=NULL)
 		'ogm' => 'video/ogg'
 	);
 
-	$ext = strtolower(array_pop(explode('.',$filename)));
+	$explodedFilename = explode('.',$filename);
+	$ext = strtolower(array_pop($explodedFilename));
 	if(array_key_exists($ext, $mime_types)) {
 		$retour = $mime_types[$ext];
 
@@ -305,9 +306,9 @@ function makeThumb($file, $isPDF=NULL)
 
 
 /******************************************************************************
- *																										*
- * 											SCRIPT												*
- *																										*
+ *																				*
+ * 											SCRIPT								*
+ *																				*
  *****************************************************************************/
 
 /*
@@ -490,9 +491,9 @@ $i=0;
 
 ///* DEBUG */ $debugHtml = '<pre><small>navig: '.print_r($navig, TRUE).'</small></pre>'.PHP_EOL;
 /******************************************************************************
- *																										*
- * 										PAGE HTML												*
- *																										*
+ *																				*
+ * 										PAGE HTML								*
+ *																				*
  *****************************************************************************/
 include ('header.php');
 echo $alertHtml . $menuHtml . $debugHtml . $corpsHtml;
