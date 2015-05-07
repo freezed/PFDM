@@ -24,5 +24,5 @@ define('THUMB_DIR', 'thumbs/');
 define('THUMB_PREFIX', 't_');
 
 // URL du script
-define('HOME_URL', 'http://localhost/PFDM/');
+define('HOME_URL', 'http://localhost/sats-pfdm/');
 ?>

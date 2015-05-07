@@ -75,6 +75,8 @@ $menuHtml 		=	'';
 $previewHtml 	=	'';
 $debugHtml 		=	'';
 $corpsHtml		=	'<section>'.PHP_EOL;
+
+//TODO: create DIR if not exist
 $content			=	scandir(CONTENT_DIR);
 
 /******************************************************************************
@@ -379,6 +381,7 @@ function makeThumb($file, $isPDF=NULL)
  */
 if(isset($navig['contentArray'])) {
 
+// TODO: faire un message si pas de fichiers dispo
 	foreach($navig['contentArray'] as $tagType => $tags) {
 			$menuHtml .= '	<p><b>'. translate($tagType, $tagType) .': </b>';
 			sort($tags);
